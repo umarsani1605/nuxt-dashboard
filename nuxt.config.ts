@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Analytics',
       link: [
+        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"},
         { rel: 'icon', type: 'image/x-icon', href: '/icon.svg'},
         { rel: 'stylesheet', href: 'https://rsms.me/inter.css'},
         { rel: 'preconnect', href: 'https://rsms.me/'}

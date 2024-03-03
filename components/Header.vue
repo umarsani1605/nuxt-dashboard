@@ -1,21 +1,60 @@
 <template>
   <header class="sticky top-0 z-20 border-b bg-background/80 backdrop-blur">
-    <div class="container flex h-16 items-center justify-between">
-      <div class="flex items-center gap-3">
-        <img src="/icon.svg" alt="Analytics Logo" class="h-7 w-7 object-contain">
-        <NuxtLink to="/" class="text-xl font-bold">Tripay</NuxtLink>
-      </div>
 
+    <!-- flex container -->
+    <div class="flex px-10 h-20 items-center justify-end">
+
+      <!-- right side of navbar -->
       <div class="flex items-center gap-5">
-        <button class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-background"
-          @click="toggleTheme" aria-label="Toggle theme">
-          <icon name="heroicons:sun" class="h-5 w-5" />
-        </button>
+        <HPopover v-slot="{ open }" class="relative">
+          <HPopoverButton :class="open ? 'bg-slate-200' : 'bg-white'"
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border bg-background">
+            <Icon name="heroicons:bell" class="h-6 w-6" />
+          </HPopoverButton>
 
-        <HMenu as="div" class="relative">
-          <HMenuButton
-            class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-background overflow-hidden">
-            <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Logged in user" class="w-full h-full">
+          <TransitionScale :scale="0.8" origin="top">
+            <HPopoverPanel
+              class="bg-white absolute z-10 mt-3 w-80 max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+              <div class="overflow-hidden p-3 rounded-lg shadow-lg ring-1 ring-black/5">
+                <div class="bg-gray-50">
+                  <a href="##"
+                    class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-200/50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50">
+                    <span class="flex items-center">
+                      <span class="text-sm font-medium text-gray-900">
+                        Notification
+                      </span>
+                    </span>
+                    <span class="block text-sm text-gray-500">
+                      Start integrating products and tools
+                    </span>
+                  </a>
+                </div>
+                <div class="bg-gray-50">
+                  <a href="##"
+                    class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-200/50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50">
+                    <span class="flex items-center">
+                      <span class="text-sm font-medium text-gray-900">
+                        Notification
+                      </span>
+                    </span>
+                    <span class="block text-sm text-gray-500">
+                      Start integrating products and tools
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </HPopoverPanel>
+          </TransitionScale>
+        </HPopover>
+
+        <HMenu as="div" v-slot="{ open }" class="relative">
+          <HMenuButton :class="open ? 'bg-slate-200' : 'bg-white'"
+            class="flex flex-row justify-center items-center rounded-lg p-1 ">
+            <p class="text-md px-3">Budi Doremi</p>
+            <div
+              class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-background overflow-hidden">
+              <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Logged in user" class="w-full h-full">
+            </div>
           </HMenuButton>
           <TransitionScale :scale="0.8" origin="top right">
             <HMenuItems
