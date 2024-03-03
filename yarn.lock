@@ -722,7 +722,7 @@
 
 "@morev/vue-transitions@^3.0.1":
   version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@morev/vue-transitions/-/vue-transitions-3.0.1.tgz#a7ef2f6c5dd754f9caa62add68f9713bca2fdc35"
+  resolved "https://registry.npmjs.org/@morev/vue-transitions/-/vue-transitions-3.0.1.tgz"
   integrity sha512-w18cyL1bQzn0yedkRQei3e+g/xJMh1Zd/sI+yOtYWORvFn8L/xzU/ZDEAfyXAXZegK261nsdhC+rWo/ifVQA8A==
   dependencies:
     "@morev/utils" "^3.6.0"
@@ -4282,7 +4282,7 @@ nuxi@^3.10.1:
 
 nuxt-headlessui@^1.1.5:
   version "1.1.5"
-  resolved "https://registry.yarnpkg.com/nuxt-headlessui/-/nuxt-headlessui-1.1.5.tgz#433d17772f9090b399c54ae8d3e1e149500ab0e6"
+  resolved "https://registry.npmjs.org/nuxt-headlessui/-/nuxt-headlessui-1.1.5.tgz"
   integrity sha512-BtXnqlyqW0JX2wPDLvu+sG/Zvm3kLMJ2Vifz+1or7IqrCnpQMGcBYCKTLw6KrI1icuaoMdW0fBDcSLIJlKW71Q==
   dependencies:
     "@headlessui/vue" "^1.0.0"
@@ -6217,6 +6217,11 @@ yargs@^17.2.1, yargs@^17.5.1:
     string-width "^4.2.3"
     y18n "^5.0.5"
     yargs-parser "^21.1.1"
+
+yarn@^1.22.21:
+  version "1.22.21"
+  resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.21.tgz"
+  integrity sha512-ynXaJsADJ9JiZ84zU25XkPGOvVMmZ5b7tmTSpKURYwgELdjucAOydqIOrOfTxVYcNXe91xvLZwcRh68SR3liCg==
 
 ylru@^1.2.0:
   version "1.3.2"
