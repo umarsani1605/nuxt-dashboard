@@ -1,5 +1,5 @@
 <template>
-  <aside class="sticky h-dvh bg-[#eff7ff]">
+  <aside class="sticky h-dvh bg-white">
     <!-- flex container -->
     <div
       class="flex h-full w-full flex-col gap-5 overflow-y-auto px-4 py-8 scrollbar-thin scrollbar-thumb-input scrollbar-thumb-rounded-md">

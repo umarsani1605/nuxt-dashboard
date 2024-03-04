@@ -12,8 +12,10 @@
   "dependencies": {
     "@morev/vue-transitions": "^3.0.1",
     "@vueuse/nuxt": "^10.9.0",
+    "apexcharts": "^3.46.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "lodash": "^4.17.21",
     "lucide-react": "^0.344.0",
     "nuxt": "^3.10.3",
     "nuxt-icon": "^0.6.8",

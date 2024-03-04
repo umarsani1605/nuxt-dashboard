@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      apiBase: 'http://localhost:8000',
+    }
+  },
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/tailwindcss",
@@ -16,10 +21,11 @@ export default defineNuxtConfig({
     head: {
       title: 'Analytics',
       link: [
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"},
         { rel: 'icon', type: 'image/x-icon', href: '/icon.svg'},
-        { rel: 'stylesheet', href: 'https://rsms.me/inter.css'},
-        { rel: 'preconnect', href: 'https://rsms.me/'}
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''},
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'},
+        { rel: 'stylesheet', href: './node_modules/apexcharts/dist/apexcharts.css'}
       ]
     }
   }
